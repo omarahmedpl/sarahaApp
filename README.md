@@ -38,11 +38,11 @@
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/saraha-app.git
+   git clone https://github.com/omarahmedpl/sarahaApp
    ```
 2. Navigate to the project directory:
    ```bash
-   cd saraha-app
+   cd sarahaApp
    ```
 3. Install dependencies:
    ```bash
@@ -65,34 +65,8 @@
 
 5. Run the server:
    ```bash
-   npm start
+   npm run dev
    ```
-
----
-
-## Joi Validation
-
-The application validates the `.env` configuration using Joi to ensure a proper setup. Here's the validation schema:
-
-```javascript
-const Joi = require('joi');
-
-const envSchema = Joi.object({
-  PORT: Joi.number().required().description('Server port'),
-  TOKEN_SIGNATUER: Joi.string().required().description('JWT signature for user tokens'),
-  TOKEN_SIGNATUER_ADMIN: Joi.string().required().description('JWT signature for admin tokens'),
-  AES_KEY: Joi.string().min(16).required().description('AES encryption key'),
-  DB_URL: Joi.string().uri().required().description('MongoDB connection URI'),
-  SALT_ROUNDS: Joi.number().min(1).required().description('Salt rounds for bcrypt hashing'),
-  EMAIL_USER: Joi.string().email().required().description('Email address for NodeMailer'),
-  EMAIL_PASS: Joi.string().required().description('Email password for NodeMailer'),
-  EMAIL_TOKEN: Joi.string().required().description('Token for secure email communication'),
-  FE_URL: Joi.string().uri().required().description('Frontend URL'),
-}).unknown();
-
-module.exports = envSchema;
-```
-
 ---
 # Project Folder Structure
 
@@ -114,7 +88,14 @@ src/
 │   ├── crypto/
 │   ├── email/
 │   ├── error/
-│   ├── hash/
+│ 
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+--- 
+
+This README is comprehensive and follows best practices, covering features, setup, security, and contributions. Let me know if you’d like to add or modify anything!  ├── hash/
 │   ├── response/
 │   └── token/
 ├── app.controller.js
@@ -415,11 +396,3 @@ messageId: <Message_ID>
 Contributions are welcome! Please fork the repository, create a new branch, and submit a pull request.
 
 ---
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
---- 
-
-This README is comprehensive and follows best practices, covering features, setup, security, and contributions. Let me know if you’d like to add or modify anything!
