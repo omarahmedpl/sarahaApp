@@ -88,14 +88,7 @@ src/
 │   ├── crypto/
 │   ├── email/
 │   ├── error/
-│ 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
---- 
-
-This README is comprehensive and follows best practices, covering features, setup, security, and contributions. Let me know if you’d like to add or modify anything!  ├── hash/
+|   ├── hash/
 │   ├── response/
 │   └── token/
 ├── app.controller.js
