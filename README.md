@@ -171,7 +171,7 @@ Accept-Language: en
 **Request Body (JSON):**
 ```json
 {
-    "username": "0omarahmed732",
+    "username": "helloworld",
     "email": "@plementus.com",
     "password": "Oo123456@",
     "confirmationPassword": "Oo123456@",
@@ -187,7 +187,7 @@ POST /auth/login
 **Request Body (JSON):**
 ```json
 {
-    "email": "0omarahmed73@gmail.com",
+    "email": "helloworld@gmail.com",
     "password": "Oo123456@OO"
 }
 ```
@@ -214,7 +214,7 @@ Authorization: <JWT_TOKEN>
 **Request Body (JSON):**
 ```json
 {
-    "email": "0omarahmed73@gmail.com"
+    "email": "helloworld@gmail.com"
 }
 ```
 
@@ -230,7 +230,7 @@ Authorization: <JWT_TOKEN>
 **Request Body (JSON):**
 ```json
 {
-    "email": "0omarahmed73@gmail.com",
+    "email": "helloworld@gmail.com",
     "password": "Oo123456@OO",
     "confirmationPassword": "Oo123456@OO",
     "otp": 245569
@@ -296,7 +296,7 @@ Authorization: <JWT_TOKEN>
 **Request Body (JSON):**
 ```json
 {
-    "email": "0omarahmed73@gmail.com"
+    "email": "helloworld@gmail.com"
 }
 ```
 
